@@ -1,10 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace RealEstates.Models
 {
-    class BuildingType
+    public class BuildingType
     {
+        public BuildingType()
+        {
+            this.Properties = new HashSet<RealEstateProperty>();
+        }
+
+        public int Id { get; set; }
+
+        [Required]
+        public string Name { get; set; }
+
+        public ICollection<RealEstateProperty> Properties { get; set; }    
     }
 }

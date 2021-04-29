@@ -9,6 +9,7 @@ namespace RealEstates.Models
         {
             this.Tags = new HashSet<RealEstatePropertyTag>();
         }
+
         public int Id { get; set; }
 
         [Required]
