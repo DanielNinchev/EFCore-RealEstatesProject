@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace RealEstate.Services
+namespace RealEstates.Services
 {
     public class Class1
     {
