@@ -84,7 +84,7 @@ namespace RealEstates.Services
             return x => new PropertyViewModel
             {
                 Price = x.Price,
-                Floor = (x.Floor ?? 0) + "/" + (x.TotalNumberOfFloors ?? 0),
+                Floor = (x.Floor ?? 0).ToString() + "/" + (x.TotalNumberOfFloors ?? 0),
                 Size = x.Size,
                 Year = x.Year,
                 BuildingType = x.BuildingType.Name,
